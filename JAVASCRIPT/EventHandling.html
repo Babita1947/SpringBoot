@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const changeToH2 = () => {
+            var h2Ref = document.getElementById("domh");
+            h2Ref.innerText = "DOM MANIPULATION BY JAVASCRIPT";
+        }
+        const changeTop = () => {
+            var pRef = document.getElementById("domp");
+            pRef.innerText = "WELCOME TO JAVASCRIPT EVENT HANDLER";
+        }
+
+    </script>
+</head>
+<body>
+    <div>
+        <h2 id="domh">DOM</h2>
+        <p id="domp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est, cupiditate minima eligendi assumenda iure delectus animi doloremque nulla tenetur architecto ab harum atque quae dolorem deserunt quos id sit. Repellendus cumque ab saepe?</p>
+
+        <button onClick=changeToH2()>CHANGEH2</button>
+        <button onClick=changeTop()>CHANGEP</button>
+    </div>
+</body>
+</html>
